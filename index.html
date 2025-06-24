@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboWins Casino - 200% Bonus + 50 Ilmaiskierrosta | Suomen Paras Nettikasino</title>
+    <meta name="description" content="TurboWins Casino tarjoaa 200% bonuksen €750 asti + 50 ilmaiskierrosta uusille pelaajille. 10% viikottainen cashback ja Pay n Play -toiminto. Pelaa turvallisesti!">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="TurboWins Casino - 200% Bonus + 50 Ilmaiskierrosta">
+    <meta property="og:description" content="Suomen paras nettikasino 200% bonuksella ja Pay n Play -toiminnolla. Aloita pelaaminen heti!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turbowins.fi">
+    <meta property="og:image" content="https://turbowins.fi/images/hero.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00f5ff',
+                        'dark-violet': '#1a0b2e',
+                        'deep-purple': '#16213e',
+                        'electric-blue': '#0066ff',
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark-violet text-white overflow-x-hidden">
+    <!-- Floating Elements Background -->
+    <div class="floating-elements">
+        <div class="floating-card"><i class="fas fa-spade-suit"></i></div>
+        <div class="floating-chip"><i class="fas fa-circle"></i></div>
+        <div class="floating-dice"><i class="fas fa-dice"></i></div>
+        <div class="floating-bolt"><i class="fas fa-bolt"></i></div>
+        <div class="floating-diamond"><i class="fas fa-gem"></i></div>
+        <div class="floating-heart"><i class="fas fa-heart"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-violet/90 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-glow">
+                    <h2 class="text-2xl font-cyber font-bold text-neon-blue">TurboWins</h2>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="nav-link">Koti</a>
+                    <a href="#games" class="nav-link">Pelit</a>
+                    <a href="#bonuses" class="nav-link">Bonukset</a>
+                    <a href="#about" class="nav-link">Tietoa</a>
+                    <a href="#support" class="nav-link">Tuki</a>
+                </div>
+                <button class="cta-button" onclick="redirectToGo()">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-violet via-deep-purple to-dark-violet"></div>
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-3d-effect text-4xl md:text-6xl lg:text-7xl font-cyber font-black leading-tight">
+                        TurboWins Casino
+                        <span class="block text-neon-blue glow-text">Nopein Voitto</span>
+                    </h1>
+                    
+                    <!-- Bonus Box -->
+                    <div class="bonus-box p-6 rounded-2xl border-2 border-neon-blue/50 bg-gradient-to-r from-dark-violet/80 to-deep-purple/80 backdrop-blur-sm">
+                        <div class="text-center space-y-4">
+                            <div class="text-2xl md:text-3xl font-bold text-neon-blue glow-text">
+                                200% BONUS
+                            </div>
+                            <div class="text-xl md:text-2xl font-semibold">
+                                €750 asti + 50 Ilmaiskierrosta
+                            </div>
+                            <div class="text-lg text-neon-blue/80">
+                                + 10% Viikottainen Cashback
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="cta-button-large" onclick="redirectToGo()">
+                            <i class="fas fa-play mr-2"></i>
+                            Aloita Pelaaminen
+                        </button>
+                        <button class="cta-button-secondary" onclick="redirectToGo()">
+                            <i class="fas fa-gift mr-2"></i>
+                            Lunasta Bonus
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="hero-image-container">
+                        <img src="images/hero.webp" alt="TurboWins Casino" class="w-full h-auto rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neon-blue/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Kuinka Lunastaa Bonus
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Rekisteröidy</h3>
+                    <p class="text-gray-300">Luo tili muutamassa sekunnissa</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Talleta</h3>
+                    <p class="text-gray-300">Tee ensimmäinen talletuksesi</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Saa Bonus</h3>
+                    <p class="text-gray-300">200% bonus aktivoituu automaattisesti</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. Pelaa</h3>
+                    <p class="text-gray-300">Aloita pelaaminen bonusrahalla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="games" class="py-20 bg-gradient-to-b from-transparent to-deep-purple/30">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Suosituimmat Pelit
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="game-card">
+                    <img src="images/book_of_dead.webp" alt="Book of Dead" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Book of Dead</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <img src="images/ripcity.webp" alt="RipCity" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">RipCity</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <img src="images/lebandit.webp" alt="Le Bandit" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Le Bandit</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/zezeus.webp" alt="Ze Zeus" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Ze Zeus</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <img src="images/stormforget.webp" alt="Stormforget" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Stormforget</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <img src="images/sugar_rush1000.webp" alt="Sugar Rush 1000" class="w-full h-auto rounded-lg">
+                    <div class="game-overlay">
+                        <h3 class="font-bold">Sugar Rush 1000</h3>
+                        <button class="play-btn" onclick="redirectToGo()">Pelaa</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                    Tietoa TurboWins Casinosta
+                </h2>
+                
+                <div class="prose prose-lg text-gray-300 space-y-6">
+                    <p>
+                        TurboWins Casino on Suomen johtava nettikasino, joka tarjoaa pelaajille ainutlaatuisen pelikokemuksen modernilla teknologialla ja laajalla pelivalikoimalla. Kasino on suunniteltu erityisesti suomalaisille pelaajille, tarjoten paikallisia maksutapoja ja suomenkielistä asiakaspalvelua.
+                    </p>
+                    
+                    <p>
+                        Pelivalikoima sisältää yli 3000 peliä maailman parhaimmilta pelintarjoajilta. Kolikkopelit, pöytäpelit, live-kasinot ja jackpot-pelit tarjoavat jokaiselle pelaajalle jotakin mielenkiintoista. Pay n Play -toiminto mahdollistaa välittömän pelaamisen ilman rekisteröitymistä, mikä tekee pelaamisesta nopeaa ja vaivatonta.
+                    </p>
+                    
+                    <p>
+                        Turvallisuus on TurboWins Casinon prioriteetti numero yksi. Kasino toimii Maltan peliviranomaisen lisenssillä ja käyttää SSL-salausta kaikkien transaktioiden suojaamiseksi. Vastuullinen pelaaminen on tärkeä osa toimintaa, ja kasino tarjoaa työkaluja peliongelmien ehkäisemiseksi.
+                    </p>
+                    
+                    <p>
+                        VIP-ohjelma palkitsee uskollisia pelaajia eksklusiivisilla bonuksilla, henkilökohtaisella asiakaspalvelulla ja korkeammilla nostorajoilla. Viisi VIP-tasoa tarjoavat yhä parempia etuja pelaajan aktiviteetin mukaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20 bg-gradient-to-b from-deep-purple/30 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Pelintarjoajat
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="provider-card">NetEnt</div>
+                <div class="provider-card">Microgaming</div>
+                <div class="provider-card">Play'n GO</div>
+                <div class="provider-card">Pragmatic Play</div>
+                <div class="provider-card">Evolution Gaming</div>
+                <div class="provider-card">Yggdrasil</div>
+                <div class="provider-card">Big Time Gaming</div>
+                <div class="provider-card">Red Tiger</div>
+                <div class="provider-card">Quickspin</div>
+                <div class="provider-card">Thunderkick</div>
+                <div class="provider-card">Push Gaming</div>
+                <div class="provider-card">Nolimit City</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Maksutavat
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">Talletukset</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-neon-blue/30">
+                                        <th class="text-left py-3">Maksutapa</th>
+                                        <th class="text-left py-3">Min/Max</th>
+                                        <th class="text-left py-3">Aika</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="space-y-2">
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Trustly</td>
+                                        <td class="py-3">€10 / €5000</td>
+                                        <td class="py-3">Välitön</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Zimpler</td>
+                                        <td class="py-3">€10 / €1000</td>
+                                        <td class="py-3">Välitön</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Paysafecard</td>
+                                        <td class="py-3">€10 / €1000</td>
+                                        <td class="py-3">Välitön</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Visa/Mastercard</td>
+                                        <td class="py-3">€10 / €2500</td>
+                                        <td class="py-3">Välitön</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">Nostot</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-neon-blue/30">
+                                        <th class="text-left py-3">Maksutapa</th>
+                                        <th class="text-left py-3">Min/Max</th>
+                                        <th class="text-left py-3">Aika</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Trustly</td>
+                                        <td class="py-3">€20 / €5000</td>
+                                        <td class="py-3">0-24h</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Pankkisiirto</td>
+                                        <td class="py-3">€20 / €10000</td>
+                                        <td class="py-3">1-3 päivää</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Visa/Mastercard</td>
+                                        <td class="py-3">€20 / €2500</td>
+                                        <td class="py-3">1-5 päivää</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-gray-300">
+                    <p>
+                        TurboWins Casino tarjoaa suomalaisille pelaajille tutut ja turvalliset maksutavat. Trustly ja Zimpler mahdollistavat nopeat talletukset ja nostot suoraan pankkitililtä ilman erillistä rekisteröitymistä. Pay n Play -toiminto yhdistää pankkitunnistuksen ja pelaamisen, joten voit aloittaa pelaamisen välittömästi ensimmäisen talletuksen jälkeen.
+                    </p>
+                    <p class="mt-4">
+                        Kaikki maksutapahtumat on suojattu 256-bittisellä SSL-salauksella, ja kasino noudattaa tiukkoja tietosuojasäännöksiä. Nostot käsitellään nopeasti, ja useimmat nostot toteutuvat saman päivän aikana. VIP-pelaajat nauttivat korkeammista nostorajoista ja priorisoidusta käsittelystä.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-deep-purple/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                    Turvallisuus & VIP-ohjelma
+                </h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">Turvallisuusominaisuudet</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-shield-alt text-neon-blue mr-3 mt-1"></i>
+                                <span>Malta Gaming Authority -lisenssi (MGA/B2C/394/2017)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lock text-neon-blue mr-3 mt-1"></i>
+                                <span>256-bittinen SSL-salaus kaikille transaktioille</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-user-shield text-neon-blue mr-3 mt-1"></i>
+                                <span>Kaksiosainen tunnistautuminen (2FA)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-eye text-neon-blue mr-3 mt-1"></i>
+                                <span>24/7 petostentorjunta ja valvonta</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-database text-neon-blue mr-3 mt-1"></i>
+                                <span>Säännölliset turvallisuusauditoinnit</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">VIP-tasot</h3>
+                        <div class="space-y-4">
+                            <div class="vip-level">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold">Bronze</span>
+                                    <span class="text-sm text-gray-400">€0 - €999</span>
+                                </div>
+                                <div class="text-sm text-gray-300">Perus cashback 5%</div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold">Silver</span>
+                                    <span class="text-sm text-gray-400">€1000 - €4999</span>
+                                </div>
+                                <div class="text-sm text-gray-300">Cashback 7% + kuukausibonukset</div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold">Gold</span>
+                                    <span class="text-sm text-gray-400">€5000 - €19999</span>
+                                </div>
+                                <div class="text-sm text-gray-300">Cashback 10% + eksklusiiviset turnaukset</div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold">Platinum</span>
+                                    <span class="text-sm text-gray-400">€20000 - €99999</span>
+                                </div>
+                                <div class="text-sm text-gray-300">Cashback 15% + henkilökohtainen manageri</div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold">Diamond</span>
+                                    <span class="text-sm text-gray-400">€100000+</span>
+                                </div>
+                                <div class="text-sm text-gray-300">Cashback 20% + VIP-tapahtumat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-gray-300">
+                    <p>
+                        TurboWins Casino sitoutuu tarjoamaan turvallisen peliympäristön kaikille pelaajille. Kasino toimii Maltan peliviranomaisen tiukan valvonnan alaisena ja noudattaa kaikkia EU:n tietosuojasäännöksiä. Kaikki henkilötiedot käsitellään luottamuksellisesti eikä niitä luovuteta kolmansille osapuolille.
+                    </p>
+                    <p class="mt-4">
+                        VIP-ohjelma palkitsee aktiivisia pelaajia automaattisesti. Mitä enemmän pelaat, sitä korkeammalle VIP-tasolle pääset ja sitä parempia etuja saat. Jokainen VIP-taso avaa uusia ominaisuuksia, kuten korkeamman cashback-prosentin, eksklusiivisia bonuksia ja henkilökohtaista asiakaspalvelua. Diamond-tason pelaajat saavat kutsuja eksklusiivisiin VIP-tapahtumiin ja turnauksiiin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Bonukset ja Tarjoukset
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="prose prose-lg text-gray-300 space-y-6 mb-12">
+                    <p>
+                        TurboWins Casino tarjoaa markkinoiden kilpailukykyisimmät bonukset suomalaisille pelaajille. Tervetuliaisbonuksen lisäksi kasino palkitsee pelaajia säännöllisesti viikoittaisilla kampanjoilla, cashback-tarjouksilla ja eksklusiivisilla VIP-bonuksilla.
+                    </p>
+                    
+                    <p>
+                        Tervetuliaisbonus 200% €750 asti on yksi markkinoiden parhaimmista. Bonus aktivoituu automaattisesti ensimmäisen talletuksen yhteydessä, eikä erillistä bonuskoodia tarvita. Bonuksen mukana tulevat 50 ilmaiskierrosta Book of Dead -peliin, jotka hyvitetään tilille 24 tunnin sisällä talletuksesta.
+                    </p>
+                    
+                    <p>
+                        Viikottainen 10% cashback on saatavilla kaikille pelaajille Bronze VIP-tasosta lähtien. Cashback lasketaan viikon nettotappioista ja hyvitetään automaattisesti joka maanantai. Cashback-rahalla ei ole kierrätysvaatimuksia, joten sen voi nostaa heti tai käyttää pelaamiseen.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">Bonustyypit</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-neon-blue mr-3 mt-1"></i>
+                                <span>Tervetuliaisbonus 200% + 50 ilmaiskierrosta</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-redo text-neon-blue mr-3 mt-1"></i>
+                                <span>Viikottainen 10% cashback</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar text-neon-blue mr-3 mt-1"></i>
+                                <span>Päivittäiset ilmaiskierrokset</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-neon-blue mr-3 mt-1"></i>
+                                <span>Turnausbonukset ja palkinnot</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-blue mr-3 mt-1"></i>
+                                <span>VIP-eksklusiiviset bonukset</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-birthday-cake text-neon-blue mr-3 mt-1"></i>
+                                <span>Syntymäpäiväbonukset</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-neon-blue">Bonusehdot</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-neon-blue/30">
+                                        <th class="text-left py-3">Bonus</th>
+                                        <th class="text-left py-3">Kierrätys</th>
+                                        <th class="text-left py-3">Voimassa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Tervetuliainen</td>
+                                        <td class="py-3">35x</td>
+                                        <td class="py-3">30 päivää</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Ilmaiskierrokset</td>
+                                        <td class="py-3">40x</td>
+                                        <td class="py-3">7 päivää</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">Cashback</td>
+                                        <td class="py-3">Ei kierrätystä</td>
+                                        <td class="py-3">-</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="py-3">VIP-bonukset</td>
+                                        <td class="py-3">25x</td>
+                                        <td class="py-3">14 päivää</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-red-900/20 to-red-800/20 border border-red-500/30 rounded-lg p-6">
+                    <h4 class="text-lg font-bold text-red-400 mb-3">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        Kierrätysvaatimukset
+                    </h4>
+                    <p class="text-sm text-gray-300">
+                        Bonuksilla on kierrätysvaatimukset, jotka on täytettävä ennen nostojen tekemistä. Kierrätysvaatimus tarkoittaa, että bonussumma on pelattava läpi määrätyn monta kertaa. Esimerkiksi 100€ bonus 35x kierrätyksellä vaatii 3500€ pelaamisen. Eri pelit vaikuttavat kierrätykseen eri tavoin: kolikkopelit 100%, pöytäpelit 10%, live-kasinot 10%.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 bg-gradient-to-b from-deep-purple/30 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Asiakaspalvelu
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="support-card">
+                        <div class="text-center">
+                            <i class="fas fa-comments text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Live Chat</h3>
+                            <p class="text-gray-300 mb-4">24/7 suomenkielinen chat</p>
+                            <button class="cta-button-small" onclick="redirectToGo()">Aloita Chat</button>
+                        </div>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="text-center">
+                            <i class="fas fa-envelope text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Sähköposti</h3>
+                            <p class="text-gray-300 mb-4">support@turbowins.fi</p>
+                            <p class="text-sm text-gray-400">Vastaus 2-4 tunnissa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-card">
+                        <div class="text-center">
+                            <i class="fas fa-phone text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Puhelin</h3>
+                            <p class="text-gray-300 mb-4">+358 9 123 4567</p>
+                            <p class="text-sm text-gray-400">Ma-Su 10:00-22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Muut Kampanjat
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="promo-card">
+                    <div class="p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-calendar-week text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Viikonlopun Boost</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Joka viikonloppu 50% bonus €200 asti + 25 ilmaiskierrosta. Voimassa perjantaista sunnuntaihin.
+                        </p>
+                        <button class="cta-button-small w-full" onclick="redirectToGo()">
+                            Lunasta Nyt
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-trophy text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Kuukauden Turnaus</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Kilpaile muita pelaajia vastaan €10,000 palkintopotista. Pisteitä kertyy jokaisesta pyöräytyksestä.
+                        </p>
+                        <button class="cta-button-small w-full" onclick="redirectToGo()">
+                            Liity Mukaan
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-gift text-4xl text-neon-blue mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Ystävän Suosittelu</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Kutsu ystäviä ja saa €50 bonus jokaisesta rekisteröityneestä ystävästä. Ystäväsi saa myös €25 bonuksen.
+                        </p>
+                        <button class="cta-button-small w-full" onclick="redirectToGo()">
+                            Kutsu Ystävä
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-deep-purple/30">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Erikoisominaisuudet
+            </h2>
+            
+            <div class="max-w-6xl mx-auto space-y-16">
+                <!-- Pay n Play -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-neon-blue">Pay n Play</h3>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Aloita pelaaminen välittömästi ilman rekisteröitymistä! Pay n Play -teknologia yhdistää pankkitunnistuksen ja pelaamisen, joten voit tehdä talletuksen ja aloittaa pelaamisen muutamassa sekunnissa.
+                        </p>
+                        <ul class="space-y-3 text-gray-300 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-neon-blue mr-3 mt-1"></i>
+                                <span>Ei rekisteröitymistä tarvita</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-neon-blue mr-3 mt-1"></i>
+                                <span>Välitön pelaaminen ensimmäisen talletuksen jälkeen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-neon-blue mr-3 mt-1"></i>
+                                <span>Turvallinen pankkitunnistus</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-neon-blue mr-3 mt-1"></i>
+                                <span>Nopeat nostot samalle tilille</span>
+                            </li>
+                        </ul>
+                        <button class="cta-button" onclick="redirectToGo()">
+                            Kokeile Pay n Play
+                        </button>
+                    </div>
+                    <div class="relative">
+                        <img src="/images/paynplay.webp" alt="Pay n Play" class="w-full h-auto rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neon-blue/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+                
+                <!-- VIP Program -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <h3 class="text-3xl font-bold mb-6 text-neon-blue">VIP-ohjelma</h3>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Nouse VIP-tasoilla ja avaa eksklusiivisia etuja! Viisi VIP-tasoa tarjoavat yhä parempia cashback-prosentteja, eksklusiivisia promokoodeja ja henkilökohtaista asiakaspalvelua.
+                        </p>
+                        <ul class="space-y-3 text-gray-300 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-crown text-neon-blue mr-3 mt-1"></i>
+                                <span>5 VIP-tasoa Bronze-Diamond</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-crown text-neon-blue mr-3 mt-1"></i>
+                                <span>Cashback 5-20% VIP-tason mukaan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-crown text-neon-blue mr-3 mt-1"></i>
+                                <span>Eksklusiiviset promokoodit</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-crown text-neon-blue mr-3 mt-1"></i>
+                                <span>Henkilökohtainen VIP-manageri</span>
+                            </li>
+                        </ul>
+                        <button class="cta-button" onclick="redirectToGo()">
+                            Liity VIP-ohjelmaan
+                        </button>
+                    </div>
+                    <div class="lg:order-1 relative">
+                        <img src="/images/vip.webp" alt="VIP Program" class="w-full h-auto rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neon-blue/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Luotettavuus ja Lisenssit
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-4xl text-neon-blue mb-4"></i>
+                    <h3 class="font-bold mb-2">MGA Lisenssi</h3>
+                    <p class="text-sm text-gray-400">Malta Gaming Authority</p>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-lock text-4xl text-neon-blue mb-4"></i>
+                    <h3 class="font-bold mb-2">SSL Suojaus</h3>
+                    <p class="text-sm text-gray-400">256-bit salaus</p>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-user-check text-4xl text-neon-blue mb-4"></i>
+                    <h3 class="font-bold mb-2">KYC Vahvistus</h3>
+                    <p class="text-sm text-gray-400">Henkilöllisyyden tarkistus</p>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-heart text-4xl text-neon-blue mb-4"></i>
+                    <h3 class="font-bold mb-2">Vastuullinen Pelaaminen</h3>
+                    <p class="text-sm text-gray-400">Pelaajan suoja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gradient-to-b from-deep-purple/30 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Usein Kysytyt Kysymykset
+            </h2>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Kuinka nopeasti voin nostaa voittoni?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nostot käsitellään yleensä 0-24 tunnin sisällä Trustly-maksutavalla. Pankkisiirrot kestävät 1-3 arkipäivää ja korttinostot 1-5 arkipäivää. VIP-pelaajat saavat priorisoidun käsittelyn.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Onko TurboWins Casino turvallinen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, TurboWins Casino toimii Malta Gaming Authorityn lisenssin alaisena ja käyttää 256-bittistä SSL-salausta. Kaikki pelit ovat sertifioituja ja reiluja, ja kasino noudattaa tiukkoja turvallisuusstandardeja.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Miten Pay n Play toimii?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pay n Play yhdistää pankkitunnistuksen ja pelaamisen. Kun teet ensimmäisen talletuksen Trustly:n kautta, järjestelmä tunnistaa sinut automaattisesti ja luo pelitilin. Voit aloittaa pelaamisen heti talletuksen jälkeen.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Mitä kierrätysvaatimukset tarkoittavat?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kierrätysvaatimus tarkoittaa, että bonussumma on pelattava läpi määrätyn monta kertaa ennen nostojen tekemistä. Esimerkiksi 100€ bonus 35x kierrätyksellä vaatii 3500€ pelaamisen. Eri pelit vaikuttavat kierrätykseen eri tavoin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-t from-dark-violet to-deep-purple border-t border-neon-blue/20 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-cyber font-bold text-neon-blue mb-4">TurboWins</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Suomen johtava nettikasino Pay n Play -toiminnolla ja parhailla bonuksilla.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Kolikkopelit</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Jackpot-pelit</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Asiakaspalvelu</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">UKK</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Maksutavat</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Bonusehdot</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>
+                            <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                            <a rel="nofollow" href="https://www.peluuri.fi" class="hover:text-neon-blue transition-colors">Peluuri.fi</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone text-neon-blue mr-2"></i>
+                            <span>Peluuri: 0800 100 101</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock text-neon-blue mr-2"></i>
+                            <span>Ma-Pe 8-21, La 10-18</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-neon-blue/20 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2025 TurboWins Casino. Kaikki oikeudet pidätetään.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-neon-blue transition-colors">Käyttöehdot</a>
+                        <a href="#" class="hover:text-neon-blue transition-colors">Tietosuoja</a>
+                        <a href="#" class="hover:text-neon-blue transition-colors">Evästeet</a>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-xs text-gray-500">
+                    <p>
+                        Pelaaminen on sallittu vain täysi-ikäisille. Pelaaminen voi aiheuttaa riippuvuutta. 
+                        Pelaa vastuullisesti ja aseta itsellesi rajat. TurboWins Casino toimii Malta Gaming Authority 
+                        -lisenssin (MGA/B2C/394/2017) alaisena.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Redirect function
+        function redirectToGo() {
+            window.location.href = '/play';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.parallax');
+            const speed = 0.5;
+
+            parallax.forEach(element => {
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
