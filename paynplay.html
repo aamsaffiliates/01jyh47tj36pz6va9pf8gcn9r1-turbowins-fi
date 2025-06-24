@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay n Play - Pelaa Välittömästi Ilman Rekisteröitymistä | TurboWins Casino</title>
+    <meta name="description" content="Pay n Play mahdollistaa välittömän pelaamisen TurboWins Casinossa ilman rekisteröitymistä. Turvallinen pankkitunnistus ja nopeat nostot samalle tilille.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Pay n Play - Pelaa Välittömästi | TurboWins Casino">
+    <meta property="og:description" content="Aloita pelaaminen heti ilman rekisteröitymistä Pay n Play -teknologialla. Turvallista ja nopeaa!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turbowins.fi/paynplay">
+    <meta property="og:image" content="https://turbowins.fi/images/paynplay.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00f5ff',
+                        'dark-violet': '#1a0b2e',
+                        'deep-purple': '#16213e',
+                        'electric-blue': '#0066ff',
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark-violet text-white overflow-x-hidden">
+    <!-- Floating Elements Background -->
+    <div class="floating-elements">
+        <div class="floating-card"><i class="fas fa-spade-suit"></i></div>
+        <div class="floating-chip"><i class="fas fa-circle"></i></div>
+        <div class="floating-dice"><i class="fas fa-dice"></i></div>
+        <div class="floating-bolt"><i class="fas fa-bolt"></i></div>
+        <div class="floating-diamond"><i class="fas fa-gem"></i></div>
+        <div class="floating-heart"><i class="fas fa-heart"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-violet/90 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-glow">
+                    <a href="/" class="text-2xl font-cyber font-bold text-neon-blue">TurboWins</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="nav-link">Koti</a>
+                    <a href="/#games" class="nav-link">Pelit</a>
+                    <a href="/#bonuses" class="nav-link">Bonukset</a>
+                    <a href="/paynplay" class="nav-link">Pay'n'Play</a>
+                    <a href="/#support" class="nav-link">Tuki</a>
+                </div>
+                <button class="cta-button" onclick="redirectToGo()">
+                    Pelaa Nyt
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="pt-24 pb-8">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-400">
+                <a href="/" class="hover:text-neon-blue transition-colors">Koti</a>
+                <span class="mx-2">/</span>
+                <span class="text-neon-blue">Pay n Play</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-violet via-deep-purple to-dark-violet"></div>
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-3d-effect text-4xl md:text-5xl lg:text-6xl font-cyber font-black leading-tight">
+                        Pay n Play
+                        <span class="block text-neon-blue glow-text">Pelaa Välittömästi</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed">
+                        Unohda pitkät rekisteröintiprosessit! Pay n Play -teknologia mahdollistaa välittömän pelaamisen 
+                        TurboWins Casinossa ilman erillistä tilin luomista.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="cta-button-large" onclick="redirectToGo()">
+                            <i class="fas fa-play mr-2"></i>
+                            Kokeile Nyt
+                        </button>
+                        <button class="cta-button-secondary" onclick="scrollToSection('how-it-works')">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Lue Lisää
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="hero-image-container">
+                        <img src="images/paynplay.png" alt="Pay n Play TurboWins" class="w-full h-auto rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neon-blue/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Pay n Play -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-deep-purple/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-cyber font-bold mb-8 glow-text">
+                    Mikä on Pay n Play?
+                </h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Pay n Play on vallankumouksellinen teknologia, joka yhdistää pankkitunnistuksen ja online-kasino pelaamisen. 
+                    Se mahdollistaa välittömän pelaamisen ilman perinteistä rekisteröitymisprosessia, tehden pelaamisesta 
+                    nopeampaa ja vaivattomampaa kuin koskaan ennen.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="feature-card">
+                    <div class="text-center">
+                        <div class="feature-icon mb-6">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-neon-blue">Pankkitunnistus</h3>
+                        <p class="text-gray-300">
+                            Käytämme turvallista pankkitunnistusta henkilöllisyytesi vahvistamiseen. 
+                            Sama teknologia, jota käytät verkkopankissasi.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="text-center">
+                        <div class="feature-icon mb-6">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-neon-blue">Välitön Pelaaminen</h3>
+                        <p class="text-gray-300">
+                            Tee talletus ja aloita pelaaminen heti. Ei odottelua, ei sähköpostivahvistuksia, 
+                            ei monimutkaisia lomakkeita.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="text-center">
+                        <div class="feature-icon mb-6">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-neon-blue">Täysi Turvallisuus</h3>
+                        <p class="text-gray-300">
+                            Kaikki tietosi ovat turvassa. Pay n Play noudattaa tiukkoja EU:n 
+                            tietosuojasäännöksiä ja pankkistandardeja.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Kuinka Pay n Play Toimii?
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div class="space-y-8">
+                        <div class="step-detailed">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-neon-blue">Valitse Talletus</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Klikkaa "Pelaa Nyt" -painiketta TurboWins-sivustolla ja valitse haluamasi talletussumma. 
+                                    Voit tallettaa jo 10 eurosta alkaen.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-detailed">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-neon-blue">Pankkitunnistus</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Sinut ohjataan turvalliseen pankkitunnistukseen. Kirjaudu sisään verkkopankkitunnuksillasi 
+                                    samalla tavalla kuin verkkopankissasi.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-detailed">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-neon-blue">Automaattinen Tilin Luonti</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Järjestelmä luo automaattisesti pelitilin pankkitietojesi perusteella. 
+                                    Kaikki tarvittavat tiedot haetaan turvallisesti pankistasi.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-detailed">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-neon-blue">Aloita Pelaaminen</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Talletus on valmis ja voit aloittaa pelaamisen välittömästi! 
+                                    Tervetuliaisbonus aktivoituu automaattisesti.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="process-visualization">
+                            <div class="process-step active">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <span>Klikkaa</span>
+                            </div>
+                            <div class="process-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="process-step active">
+                                <i class="fas fa-university"></i>
+                                <span>Tunnistaudu</span>
+                            </div>
+                            <div class="process-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="process-step active">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Tili Luodaan</span>
+                            </div>
+                            <div class="process-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="process-step active">
+                                <i class="fas fa-play"></i>
+                                <span>Pelaa!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-20 bg-gradient-to-b from-deep-purple/30 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Pay n Play Edut
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Säästä Aikaa</h3>
+                    <p class="text-gray-300">
+                        Ei pitkiä rekisteröintilomakkeita tai sähköpostivahvistuksia. 
+                        Aloita pelaaminen muutamassa sekunnissa.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Yksityisyys</h3>
+                    <p class="text-gray-300">
+                        Ei tarvitse jakaa henkilökohtaisia tietoja. 
+                        Pankkitunnistus hoitaa kaiken turvallisesti.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Mobiiliystävällinen</h3>
+                    <p class="text-gray-300">
+                        Toimii saumattomasti kaikilla laitteilla. 
+                        Pelaa kotona tai liikkeellä.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Nopeat Nostot</h3>
+                    <p class="text-gray-300">
+                        Voitot nostetaan suoraan samalle pankkitilille, 
+                        jolta teit talletuksen. Yleensä 0-24 tunnissa.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Ei Salasanoja</h3>
+                    <p class="text-gray-300">
+                        Ei tarvitse muistaa salasanoja tai käyttäjätunnuksia. 
+                        Pankkitunnistus hoitaa kirjautumisen.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Samat Bonukset</h3>
+                    <p class="text-gray-300">
+                        Saat kaikki samat bonukset ja edut kuin 
+                        perinteiset rekisteröityneet pelaajat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Banks -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Tuetut Pankit
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-center text-lg text-gray-300 mb-12">
+                    Pay n Play toimii kaikkien suurimpien suomalaisten pankkien kanssa. 
+                    Jos sinulla on verkkopankkitunnukset, voit käyttää Pay n Play -palvelua.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Nordea</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Osuuspankki</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Danske Bank</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Handelsbanken</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Säästöpankki</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">POP Pankki</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="font-bold">Oma Säästöpankki</h3>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h3 class="font-bold">Muut Pankit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-deep-purple/30">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Turvallisuus ja Luotettavuus
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <div class="security-feature">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-neon-blue">Pankkitason Turvallisuus</h3>
+                                <p class="text-gray-300">
+                                    Pay n Play käyttää samaa 256-bittistä SSL-salausta ja turvallisuusteknologiaa 
+                                    kuin verkkopankit. Tietosi ovat täysin turvassa.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <div class="security-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-neon-blue">Automaattinen KYC</h3>
+                                <p class="text-gray-300">
+                                    Henkilöllisyytesi vahvistetaan automaattisesti pankkitunnistuksen yhteydessä. 
+                                    Ei tarvetta lähettää dokumentteja erikseen.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <div class="security-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-neon-blue">GDPR-yhteensopiva</h3>
+                                <p class="text-gray-300">
+                                    Noudatamme tiukkoja EU:n tietosuojasäännöksiä. Tietojasi ei tallenneta 
+                                    tarpeettomasti tai jaeta kolmansille osapuolille.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <div class="security-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-neon-blue">Lisensoitu Toiminta</h3>
+                                <p class="text-gray-300">
+                                    TurboWins Casino toimii Malta Gaming Authority -lisenssin alaisena. 
+                                    Pay n Play on hyväksytty osa toimintaamme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="security-visualization">
+                            <div class="security-layer">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>SSL-salaus</span>
+                            </div>
+                            <div class="security-layer">
+                                <i class="fas fa-university"></i>
+                                <span>Pankkitunnistus</span>
+                            </div>
+                            <div class="security-layer">
+                                <i class="fas fa-user-shield"></i>
+                                <span>KYC-vahvistus</span>
+                            </div>
+                            <div class="security-layer">
+                                <i class="fas fa-lock"></i>
+                                <span>GDPR-suoja</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-cyber font-bold text-center mb-16 glow-text">
+                Usein Kysytyt Kysymykset
+            </h2>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Onko Pay n Play turvallinen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, Pay n Play on täysin turvallinen. Se käyttää samaa teknologiaa ja turvallisuusstandardeja kuin verkkopankit. Kaikki tiedonsiirto on salattu 256-bittisellä SSL-salauksella, ja palvelu noudattaa tiukkoja EU:n tietosuojasäännöksiä.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Voinko käyttää Pay n Play -palvelua mobiililaitteella?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, Pay n Play toimii saumattomasti kaikilla laitteilla - tietokoneella, tabletilla ja älypuhelimella. Mobiilipankkitunnistus toimii samalla tavalla kuin verkkopankissa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Mitä tapahtuu, jos haluan lopettaa pelaamisen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Voit nostaa voittosi milloin tahansa samalle pankkitilille, jolta teit talletuksen. Nostot käsitellään yleensä 0-24 tunnin sisällä. Jos haluat sulkea tilin pysyvästi, ota yhteyttä asiakaspalveluun.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Saanko samat bonukset kuin perinteiset pelaajat?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, Pay n Play -pelaajat saavat täsmälleen samat bonukset ja edut kuin perinteiset rekisteröityneet pelaajat. Tervetuliaisbonus 200% + 50 ilmaiskierrosta aktivoituu automaattisesti ensimmäisen talletuksen yhteydessä.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Entä jos pankillani ei ole verkkopankkitunnuksia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pay n Play vaatii verkkopankkitunnukset toimiakseen. Jos sinulla ei ole verkkopankkitunnuksia, voit rekisteröityä perinteisellä tavalla ja käyttää muita maksutapoja kuten Visa, Mastercard tai Paysafecard.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Voinko käyttää Pay n Play -palvelua useita kertoja?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kyllä, kun olet käyttänyt Pay n Play -palvelua ensimmäisen kerran, järjestelmä tunnistaa sinut automaattisesti seuraavilla kerroilla. Voit tehdä talletuksia ja nostoja saumattomasti ilman uudelleen rekisteröitymistä.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-b from-deep-purple/30 to-transparent">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-cyber font-bold mb-8 glow-text">
+                    Kokeile Pay n Play Nyt!
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Aloita pelaaminen <a class="underline hover:no-underline" href="/">TurboWins Casinossa</a> muutamassa sekunnissa. 
+                    Ei rekisteröitymistä, ei odottelua - vain puhdasta peliiloa!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="cta-button-large" onclick="redirectToGo()">
+                        <i class="fas fa-play mr-2"></i>
+                        Aloita Pay n Play
+                    </button>
+                    <button class="cta-button-secondary" onclick="window.location.href='/'">
+                        <i class="fas fa-home mr-2"></i>
+                        Takaisin Etusivulle
+                    </button>
+                </div>
+                
+                <div class="mt-8 text-sm text-gray-400">
+                    <p>
+                        <i class="fas fa-shield-alt text-neon-blue mr-2"></i>
+                        Turvallinen pankkitunnistus • 
+                        <i class="fas fa-bolt text-neon-blue mr-2"></i>
+                        Välitön pelaaminen • 
+                        <i class="fas fa-gift text-neon-blue mr-2"></i>
+                        200% tervetuliaisbonus
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-t from-dark-violet to-deep-purple border-t border-neon-blue/20 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-cyber font-bold text-neon-blue mb-4">TurboWins</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Suomen johtava nettikasino Pay n Play -toiminnolla ja parhailla bonuksilla.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-neon-blue hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Kolikkopelit</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Pöytäpelit</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Jackpot-pelit</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Asiakaspalvelu</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">UKK</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Maksutavat</a></li>
+                        <li><a href="#" class="hover:text-neon-blue transition-colors">Bonusehdot</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>
+                            <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                            <a href="https://www.peluuri.fi" class="hover:text-neon-blue transition-colors">Peluuri.fi</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone text-neon-blue mr-2"></i>
+                            <span>Peluuri: 0800 100 101</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock text-neon-blue mr-2"></i>
+                            <span>Ma-Pe 8-21, La 10-18</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-neon-blue/20 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2025 TurboWins Casino. Kaikki oikeudet pidätetään.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-neon-blue transition-colors">Käyttöehdot</a>
+                        <a href="#" class="hover:text-neon-blue transition-colors">Tietosuoja</a>
+                        <a href="#" class="hover:text-neon-blue transition-colors">Evästeet</a>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-xs text-gray-500">
+                    <p>
+                        Pelaaminen on sallittu vain täysi-ikäisille. Pelaaminen voi aiheuttaa riippuvuutta. 
+                        Pelaa vastuullisesti ja aseta itsellesi rajat. TurboWins Casino toimii Malta Gaming Authority 
+                        -lisenssin (MGA/B2C/394/2017) alaisena.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Redirect function
+        function redirectToGo() {
+            window.location.href = '/play';
+        }
+
+        // Scroll to section function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.parallax');
+            const speed = 0.5;
+
+            parallax.forEach(element => {
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+    </script>
+
+    <!-- Additional CSS for Pay n Play page -->
+    <style>
+        /* Feature Cards */
+        .feature-card {
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #00f5ff;
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 2rem;
+            color: #ffffff;
+            animation: icon-pulse 2s ease-in-out infinite;
+        }
+
+        /* Step Detailed */
+        .step-detailed {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            flex-shrink: 0;
+            animation: step-glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes step-glow {
+            from {
+                box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+            }
+            to {
+                box-shadow: 0 0 30px rgba(0, 245, 255, 0.6);
+            }
+        }
+
+        /* Process Visualization */
+        .process-visualization {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 16px;
+        }
+
+        .process-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            min-width: 120px;
+            animation: process-pulse 2s ease-in-out infinite;
+        }
+
+        .process-step i {
+            font-size: 1.5rem;
+        }
+
+        .process-arrow {
+            color: #00f5ff;
+            font-size: 1.5rem;
+            animation: arrow-bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes process-pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(0, 245, 255, 0.5);
+            }
+        }
+
+        @keyframes arrow-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        /* Benefit Cards */
+        .benefit-card {
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            border-color: #00f5ff;
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.8rem;
+            color: #ffffff;
+            animation: icon-pulse 2s ease-in-out infinite;
+        }
+
+        /* Bank Cards */
+        .bank-card {
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .bank-card:hover {
+            transform: translateY(-5px);
+            border-color: #00f5ff;
+            box-shadow: 0 10px 30px rgba(0, 245, 255, 0.2);
+        }
+
+        .bank-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        /* Security Features */
+        .security-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.6) 0%, rgba(22, 33, 62, 0.6) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .security-feature:hover {
+            border-color: #00f5ff;
+            background: linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(0, 102, 255, 0.1) 100%);
+        }
+
+        .security-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00f5ff 0%, #0066ff 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        /* Security Visualization */
+        .security-visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(26, 11, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 16px;
+        }
+
+        .security-layer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(0, 102, 255, 0.1) 100%);
+            border: 1px solid rgba(0, 245, 255, 0.3);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .security-layer:hover {
+            border-color: #00f5ff;
+            background: linear-gradient(135deg, rgba(0, 245, 255, 0.2) 0%, rgba(0, 102, 255, 0.2) 100%);
+        }
+
+        .security-layer i {
+            color: #00f5ff;
+            font-size: 1.5rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .step-detailed {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .security-feature {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .process-visualization {
+                padding: 1rem;
+            }
+
+            .process-step {
+                min-width: 100px;
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</body>
+</html>
